@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Terminal</title>
+</head>
+<body>
+    <div class="terminal__wrapper">
+
+        <!-- //BAR -->
+        <div class="terminal__bar">
+            <div class="terminal__bar__header">Terminal root
+                <br> Plik Edycja Szukaj Widok Pomoc
+            </div>
+            <div class="terminal__btns"></div>
+        </div>
+        <!-- //BODY -->
+        <div class="terminal__body">
+            <h4>Linux swiat 4.19.0-12-686-pae #1 SMP 'Swiat Linuxa' 4.19.152-1 (2020-10-18) x64 <br>
+                'Swiat Linuxa' GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the eree software;permitted by applicable law.
+            </h4>
+            <div class="terminal__line">
+            <label for="result" class="terminal__line__header">swiat@linuxa:~$</label>
+            <input type="text"id="getCommand"class="terminal__line__input"/>
+            <input type="button" onclick="main()" value="Enter">
+            <div id="terminal__result"></div>
+        </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
