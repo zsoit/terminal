@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Terminal</title>
-</head>
-<body>
-    <div class="terminal__wrapper">
+    <link rel="stylesheet" href="src/style.css">
+    <style>
 
-        <!-- //BAR -->
-        <div class="terminal__bar">
-            <div class="terminal__bar__header">Terminal root
-                <br> Plik Edycja Szukaj Widok Pomoc
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bar">
+            <div class="bar__title">Terminal swiat@linuxa
+                <span class="bar__btn bar__btn1">
+                    <span class="btn__icon">&times;</span>
+                </span>
+                <span class="bar__btn bar__btn3">
+                    <span >□</span>
+                </span>
+                <span class="bar__btn bar__btn2">
+                    <span >-</span>
+                </span>
+
             </div>
-            <div class="terminal__btns"></div>
+
         </div>
-        <!-- //BODY -->
-        <div class="terminal__body">
-            <h4>Linux swiat 4.19.0-12-686-pae #1 SMP 'Swiat Linuxa' 4.19.152-1 (2020-10-18) x64 <br>
-                'Swiat Linuxa' GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the eree software;permitted by applicable law.
-            </h4>
-            <div class="terminal__line">
-            <label for="result" class="terminal__line__header">swiat@linuxa:~$</label>
-            <input type="text"id="getCommand"class="terminal__line__input"/>
-            <input type="button" onclick="main()" value="Enter">
-            <div id="terminal__result"></div>
+        <span><br>Linux swiat 4.19.0-12-686-pae #1 SMP 'Swiat Linuxa' 4.19.152-1 (2020-10-18) x64 <br> 'Swiat Linuxa' GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the eree software;permitted by applicable law.></span>
+        <div class="terminal">
         </div>
-        </div>
+        <span id="header">swiat@lnuxa:~$ </span>
+        <input id="myInput" type="text" onblur="this.focus()" autofocus>
     </div>
-    <script src="main.js"></script>
 </body>
+
+
+<script src="src/main.js"></script>
+
 </html>
