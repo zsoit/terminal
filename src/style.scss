@@ -7,6 +7,8 @@
 }
 
 body {
+    padding: 0;
+    margin: 0;
     /* background-color: #1d1f21; */
     color: white;
     background-color: gray;
@@ -19,11 +21,20 @@ input {
     caret-color: rgb(255, 0, 0);
     caret-color: hsl(0, 97%, 50%);
     background-color: transparent;
+    width: 200px;
     color: white;
     border: none;
     font-size: 15px;
 }
 
+// @keyframes zanikanie {
+//     from {
+//         width: 50%;
+//     }
+//     to {
+//         width: 97%;
+//     }
+// }
 #header {
     color: lightgreen;
     margin-bottom: 125px;
@@ -32,11 +43,16 @@ input {
 .wrapper {
     /* padding: 20px; */
     /* border: 0.5px solid white; */
+    margin: 15px;
     background-color: #1d1f21;
+    box-shadow: 50px black;
     border-radius: 20px;
     padding: 10px;
     min-height: 90vh;
     max-height: 5000px;
+    // animation-name: zanikanie;
+    // animation-duration: 0.2s;
+    // animation-fill-mode: forwards;
     /* border-radius: 20px; */
 }
 
@@ -63,4 +79,30 @@ input {
 
 .btn__icon {
     color: black;
+}
+
+.icon {
+    display: none;
+    width: 100px;
+    text-align: center;
+    & img {
+        width: 100px;
+        cursor: pointer;
+    }
+}
+
+.systemBar {
+    width: 100%;
+    background-color: #1d1f21;
+}
+
+.firefox {
+    display: none;
+    frame {
+        display: none;
+    }
+}
+
+#time {
+    float: right;
 }

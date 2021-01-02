@@ -7,6 +7,8 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   /* background-color: #1d1f21; */
   color: white;
   background-color: gray;
@@ -19,6 +21,7 @@ input {
   caret-color: red;
   caret-color: #fb0404;
   background-color: transparent;
+  width: 200px;
   color: white;
   border: none;
   font-size: 15px;
@@ -32,7 +35,10 @@ input {
 .wrapper {
   /* padding: 20px; */
   /* border: 0.5px solid white; */
+  margin: 15px;
   background-color: #1d1f21;
+  -webkit-box-shadow: 50px black;
+          box-shadow: 50px black;
   border-radius: 20px;
   padding: 10px;
   min-height: 90vh;
@@ -63,5 +69,33 @@ input {
 
 .btn__icon {
   color: black;
+}
+
+.icon {
+  display: none;
+  width: 100px;
+  text-align: center;
+}
+
+.icon img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.systemBar {
+  width: 100%;
+  background-color: #1d1f21;
+}
+
+.firefox {
+  display: none;
+}
+
+.firefox frame {
+  display: none;
+}
+
+#time {
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */

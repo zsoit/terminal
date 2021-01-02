@@ -6,37 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal</title>
     <link rel="stylesheet" href="src/style.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="bar">
-            <div class="bar__title">Terminal swiat@linuxa
-                <span class="bar__btn bar__btn1">
-                    <span class="btn__icon">&times;</span>
+    <div class="systemBar">
+        <span id="app">Terminal</span>
+        <span id="time"></span>
+    </div>
+    <div class="firefox">
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="97%" height="1000px" src="https://duckduckgo.com/">
+    </iframe>
+
+    </div>
+    <div class="desktop">
+        <div class="icon">
+            <img src="terminal.png " onClick="show()">
+            <p>Terminal</p>
+            <img src="firefox.png " onClick="firefox()">
+            <p>Firefox</p>
+        </div>
+
+    </div>
+    <div id="console" class="wrapper ">
+        <div class="bar ">
+            <div class="bar__title ">Terminal swiat@linuxa
+                <span class="bar__btn bar__btn1 " onClick="exit()">
+                    <span class="btn__icon ">&times;</span>
                 </span>
-                <span class="bar__btn bar__btn3">
+                <span class="bar__btn bar__btn3 ">
                     <span >□</span>
                 </span>
-                <span class="bar__btn bar__btn2">
+                <span class="bar__btn bar__btn2 ">
                     <span >-</span>
                 </span>
 
             </div>
 
         </div>
-        <span><br>Linux swiat 4.19.0-12-686-pae #1 SMP 'Swiat Linuxa' 4.19.152-1 (2020-10-18) x64 <br> 'Swiat Linuxa' GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the eree software;permitted by applicable law.></span>
-        <div class="terminal">
+        <span><br>Linux swiat 4.19.0-12-686-pae #1 SMP 'Swiat Linuxa' 4.19.152-1 (2020-10-18) x64 <br> 'Swiat Linuxa' GNU/Linux;Aby wyświetlić listę dostepnych poleceń wpisz help.</span>
+        <div class="terminal ">
+            <div class="terminalOut "></div>
         </div>
         <span id="header">swiat@lnuxa:~$ </span>
-        <input id="myInput" type="text" onblur="this.focus()" autofocus>
+        <input id="myInput " type="text " onblur="this.focus() " autofocus>
     </div>
 </body>
 
 
-<script src="src/main.js"></script>
+<script src="src/main.js "></script>
 
 </html>
